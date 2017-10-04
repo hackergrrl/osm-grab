@@ -21,7 +21,7 @@ $ osm-grab 37.7274 -122.1134 0.2
 With [npm](https://npmjs.org/) installed, run
 
 ```
-$ npm install osm-grab
+$ npm install --global osm-grab
 ```
 
 ## License
