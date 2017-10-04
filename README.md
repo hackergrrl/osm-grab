@@ -1,6 +1,6 @@
 # osm-grab
 
-> cli utility for grabbing OSM XML from OSM.org
+> CLI utility for grabbing OSM XML from OSM.org.
 
 ## Usage
 
