@@ -1,0 +1,22 @@
+{
+  "name": "osm-grab",
+  "description": "cli utility for grabbing OSM XML from OSM.org",
+  "author": "Stephen Whitmore <sww@eight.net>",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git://github.com/noffle/osm-grab.git"
+  },
+  "homepage": "https://github.com/noffle/osm-grab",
+  "bugs": "https://github.com/noffle/osm-grab/issues",
+  "main": "index.js",
+  "bin": {
+    "osm-grab": "osm-grab"
+  }
+  "keywords": [
+    "osm",
+    "openstreetmap"
+    "cli"
+  ],
+  "dependencies": {},
+  "license": "ISC"
+}

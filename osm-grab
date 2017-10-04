@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+[ $# -ne 3 ] && { echo "USAGE: osm-grab LAT LON RADIUS-KM"; exit 1; }
+
+LAT=$1
+LON=$2
+RADIUS_KM=$3
+RADIUS=$(echo "$RADIUS_KM / 100.0" | bc -l)  # -l tells bc to use fractional values
+
+LEFT=$(echo "$LON - $RADIUS" | bc)
+BOTTOM=$(echo "$LAT - $RADIUS" | bc)
+RIGHT=$(echo "$LON + $RADIUS" | bc)
+TOP=$(echo "$LAT + $RADIUS" | bc)
+
+URL="https://www.openstreetmap.org/api/0.6/map?bbox=${LEFT},${BOTTOM},${RIGHT},${TOP}"
+
+curl -s $URL
