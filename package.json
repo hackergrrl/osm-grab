@@ -11,10 +11,10 @@
   "main": "index.js",
   "bin": {
     "osm-grab": "osm-grab"
-  }
+  },
   "keywords": [
     "osm",
-    "openstreetmap"
+    "openstreetmap",
     "cli"
   ],
   "dependencies": {},
