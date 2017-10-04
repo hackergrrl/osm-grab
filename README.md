@@ -24,6 +24,11 @@ With [npm](https://npmjs.org/) installed, run
 $ npm install --global osm-grab
 ```
 
+## Requirements
+
+- `curl`
+- `bc`
+
 ## License
 
 ISC
